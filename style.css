@@ -1,0 +1,114 @@
+/* links */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* links */
+
+/* Basic design */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+li{
+    list-style: none;
+}
+/* Basic design */
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(#2193b0 , #6dd5ed);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+header,form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,button{
+    padding: 1rem 3.5rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button{
+    background-color: transparent;
+}
+.todo-btn i{
+    font-size: 3.7rem;
+    margin-left: -3rem;
+    color: #fff;
+}
+input:focus{
+    outline: none;
+}
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+}
+.todo-item{
+    font-size: 2rem;
+    padding: 0rem .5rem 0rem .5rem;
+    flex: 1;
+}
+.check-btn,.trash-btn{
+    background-image: linear-gradient(#2193b0 , #6dd5ed);
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.checked-btn{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    position: relative;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+}
+.select{
+    position: relative;
+    cursor: pointer;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    color: #2193b0;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    pointer-events: none;
+}
