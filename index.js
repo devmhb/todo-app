@@ -59,13 +59,23 @@ function filterTodo(e){
         console.log(todo.classList);
        switch(value){
         case "all":
-            // console.log("fuck");
+            todo.style.display = "flex"
             break;
         case "completed":
-            // console.log("fucking is complete");
+           if(todo.classList.contains("checked-btn")){
+            todo.style.display = "flex";
+           }
+           else{
+               todo.style.display = "none"
+           }
             break;
         case "uncompleted":
-            // console.log("fucking is not complete");
+            if(!todo.classList.contains("checked-btn")){
+                todo.style.display = "flex"
+            }
+            else{
+                todo.style.display = "none"
+            }
        }
     });
   
