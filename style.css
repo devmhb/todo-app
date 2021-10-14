@@ -35,19 +35,19 @@ header,form{
 }
 
 input,button{
-    padding: 1rem 3.5rem;
+    padding: 1rem 3rem;
     border: none;
     background-color: #fff;
-    border-radius: 3px;
     cursor: pointer;
 }
 button{
-    background-color: transparent;
+    background-color:transparent;
 }
+
 .todo-btn i{
-    font-size: 3.7rem;
-    margin-left: -3rem;
-    color: #fff;
+    font-size: 2rem;
+    margin-left: -8rem;
+    color: #2193b0;
 }
 input:focus{
     outline: none;
@@ -58,6 +58,7 @@ input:focus{
     justify-content: center;
 }
 .todo{
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -99,6 +100,7 @@ select{
 .select{
     position: relative;
     cursor: pointer;
+    margin-left: -3rem;
 }
 .select::after{
     content: "\25BC";
@@ -112,3 +114,14 @@ select{
     padding: 1rem;
     pointer-events: none;
 }
+
+/* media query */
+@media only screen and (max-width: 600px) {
+    /* form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+  }
+/* media query end */
